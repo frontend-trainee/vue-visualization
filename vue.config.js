@@ -48,25 +48,11 @@ module.exports = {
       .set("@", resolve("./src"))
       .set("components", resolve("./src/components"));
   },
-  // 开启Gzip
-  configureWebpack: (config) => {
-    if (process.env.NODE_ENV === "production") {
-      return {
-        plugins: [
-          new CompressionPlugin({
-            algorithm: "gzip",
-            test: /\.(js|css)$/, // 匹配文件名
-            threshold: 10240, // 对超过10k的数据压缩
-            deleteOriginalAssets: false, // 不删除源文件
-            minRatio: 0.8, // 压缩比
-          }),
-        ],
-        output: {
-          library: `${name}-[name]`,
-          libraryTarget: "umd", // 把微应用打包成 umd 库格式
-          jsonpFunction: `webpackJsonp_${name}`,
-        },
-      };
-    }
-  },
+  configureWebpack: {
+    output: {
+      library: `${name}-[name]`,
+      libraryTarget: "umd", // 把微应用打包成 umd 库格式
+      jsonpFunction: `webpackJsonp_${name}`,
+    },
+  }
 };
