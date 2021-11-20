@@ -42,7 +42,6 @@ export default {
 <style lang="scss" scoped>
 .overview {
   height: 100%;
-  padding: 0 50px;
   background-color: #fafafa;
   .container {
     height: 100%;

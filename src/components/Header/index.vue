@@ -13,7 +13,7 @@
             <input class="search-input" type="text" />
             <i class="el-icon-search"></i>
           </div>
-          <div class="nav">
+          <div class="v-nav">
             <el-menu
               :default-active="'/dashboard/' + this.$route.path.split('/')[2]"
               class="el-menu-demo"
@@ -82,7 +82,7 @@
       color: #a8aad6;
     }
   }
-  .nav {
+  .v-nav {
     margin-left: 45px;
     .el-menu.el-menu--horizontal {
       border: none;

@@ -106,6 +106,8 @@ export default {
   flex-direction: column;
 }
 .right {
+  width: 370px;
+  margin-left: -35px;
   .chart1 {
     box-sizing: border-box;
     padding: 15px 20px;
