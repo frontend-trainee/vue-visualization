@@ -90,7 +90,7 @@ export default {
     box-shadow: 0px 17px 30px #eee5ff;
     box-sizing: border-box;
     padding: 15px 20px;
-    width: 370px;
+    width: 280px;
     .bar-container {
       height: 100px;
     }
@@ -145,7 +145,7 @@ export default {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 17px 30px #eee5ff;
-    width: 370px;
+    width: 280px;
 
     display: flex;
     flex-direction: column;
